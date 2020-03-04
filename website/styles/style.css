@@ -1,0 +1,443 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+} 
+
+/*////////End CSS reset////////*/
+
+html {
+    font-size: 12px;
+    font-family: 'Lato',sans-serif;
+}
+
+body {
+    background-color: #fff;
+    margin: 0 0;
+    padding: 0 0px 0px 0px;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    background-color: #73C29B;
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px
+    color: #ffffff;
+        font-size: 16px;
+        font-family: monospace;
+        text-align: left;
+}
+header:after{
+    content: "";
+    display:block;
+    clear: both;
+}
+#logo{
+    background: url(/website/images/logo.png)  no-repeat;
+    background-size: 60px 60px;
+    height: 80px;
+    width: 80px;
+    float: left;
+    position: relative;
+    top: 10px;
+    text-indent: -1000px;
+}
+header nav{
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+header nav h2{
+    height: 0;
+    text-indent: -10000px;
+}
+header nav li{
+    float: left;
+    margin-left: 20px;
+}
+header nav span{
+    color: lightgray;
+    margin-left: 20px
+}
+
+#lead-banner img{
+    width: 100%;
+
+}
+
+#lead-banner {
+    max-height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-overlay{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    
+}
+
+.banner-title {
+    line-height: 40px;
+    color: #fff;
+    font-size: 52px;   
+    text-transform: uppercase;
+    text-shadow: 4px 5px 10px rgba(0,0,0,0.6)
+}
+
+#lead-banner p{
+    color: #fff;
+    font-size: 16px;
+    max-width: 400px;
+    margin-top: 10px;
+    text-shadow: 4px 5px 10px rgba(0,0,0,0.6)
+}
+
+#lead-banner a{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+    color: dimgrey;
+    display:block;
+    width: 150px;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+.createbar{
+    background-color:dimgray;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -8px;
+
+}
+
+#create h2{
+    font-size: 25px;
+    padding: 5px ;
+}
+
+.blockgrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 50px;
+    justify-content: center;
+    width: 90%;
+}
+
+.block{
+    padding: 20px ;
+    justify-content: center;
+}
+.block img{
+    height: 100px;
+    width: auto;
+    justify-content: center;
+}
+.block h3{
+    margin: 10px;
+    text-align: center;
+}
+.block p{
+    font-size: 14px;
+}
+
+#introduction{
+    background-color: #F5FAF9;
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0;
+    color: dimgray;
+    
+}
+#introduction h2{
+    font-size: 32px;
+    position: relative;
+    top: 20px;
+    padding: 10px 0;
+}
+
+#introduction p{
+    font-size: 14px;
+    position: relative;
+    top: 20px;
+}
+#picbar{
+    display: inline-flex;
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    width: 90%;
+    height: 250px;
+}
+#picbar li{
+    list-style: none;
+    padding: 10px;
+}
+
+#designer{
+    padding: 100px 20px;
+
+}
+#picbar2{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+#picbar2 li{
+    list-style: none;
+    padding: 10px;
+}
+
+#picbar2 li img{
+    height: 150px;
+}
+
+#picbar2 h3{
+    text-align: center;
+}
+
+
+#video {
+    background-color: dimgray;
+    padding: 60px 0;
+}  
+#vid-section{
+    display: flex;
+    width: 100%;  
+}
+#video iframe{
+    padding: 50px;
+    height: 200px;
+    width: 300px;
+}
+.vidtitle{
+    padding: 30px;
+    color: #fff;
+
+}
+#video h2{
+    font-size: 18px;
+    padding: 10px 0;
+    
+}
+#video p{
+    font-size: 14px;
+ 
+}
+#video a{
+     background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+    color: dimgrey;
+    display:block;
+    width: 150px;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+#layout {
+
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0;
+    color: dimgray;
+    
+}
+#layout h2{
+    font-size: 40px;
+    height: 80px;
+    padding: 20px 0;
+}
+
+#contact{
+    background-color: dimgray;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    
+}
+#contact h2{
+    height: 0;
+    text-indent: -10000px;
+}
+#aboutbox {
+    width: 30%;
+}
+#contact-title li {
+    padding: 6px;
+}
+#contact-detail li {
+    margin: 2px;
+}
+#contact li{
+    list-style: none;
+}
+.getintouch {
+    display: flex;
+    margin: 10px 10px 0px 0;
+}
+
+#social-nav a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#social-nav a:hover {
+    color: orange;
+}
+
+#main-footer{
+    background-color: #73C29B;
+    color: #fff;
+    height: 40px;
+}
+#main-footer p{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width:960px){
+    .banner-title{
+        font-size: 40px;
+    }
+    #lead-banner p {
+        max-width: 90%;    
+    }
+    
+}
+
+
+
+
+
+
